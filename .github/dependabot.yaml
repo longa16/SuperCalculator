@@ -6,7 +6,7 @@ updates:
       interval: "daily"
 
   - package-ecosystem: "docker"
-    directory: "https://github.com/longa16/3DVP_Project/blob/main/super_calculator/Dockerfile"
+    directory: "https://github.com/longa16/3DVP_Project/blob/main/super_calculator"
     schedule:
       interval: "daily"
 
