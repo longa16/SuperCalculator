@@ -1,17 +1,17 @@
 version: 2
 updates:
   - package-ecosystem: "github-actions"
-    directory: "/"
+    directory: "/super_calculator/"
     schedule:
       interval: "daily"
 
   - package-ecosystem: "docker"
-    directory: "https://github.com/longa16/3DVP_Project/blob/main/super_calculator"
+    directory: "/super_calculator/"
     schedule:
       interval: "daily"
 
   - package-ecosystem: "gomod"
-    directory: "/"
+    directory: "/super_calculator/"
     schedule:
       interval: "daily"
 
