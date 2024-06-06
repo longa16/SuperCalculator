@@ -1,17 +1,17 @@
 version: 2
 updates:
   - package-ecosystem: "github-actions"
-    directory: "/super_calculator/"
+    directory: "/"
     schedule:
       interval: "daily"
 
   - package-ecosystem: "docker"
-    directory: "/super_calculator/"
+    directory: "/"
     schedule:
       interval: "daily"
 
   - package-ecosystem: "gomod"
-    directory: "/super_calculator/"
+    directory: "/"
     schedule:
       interval: "daily"
 
