@@ -75,3 +75,5 @@ This application uses the default go test integration.
 ?       calculator/cmd              [no test files]
 ok      calculator/internals/math   0.002s
 ```
+
+## Github Action
