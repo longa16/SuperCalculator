@@ -75,3 +75,43 @@ This application uses the default go test integration.
 ?       calculator/cmd              [no test files]
 ok      calculator/internals/math   0.002s
 ```
+
+## GitHub Action 
+
+It enables developers to automate common tasks 
+in the software development lifecycle.
+
+### Dependency management
+
+install dependabot and configure it to activate and check go and
+docker
+
+![dependabot](img/1.png "illustration")
+
+###  Release workflow
+This workflow is triggered when labels are created. It uses goreleaser to compile the project for different operating systems and integrate it into release artifacts.
+the project for different operating systems and integrate it into the release artifacts.
+This workflow also creates an image using the root Dockerfile and
+and sends it to the docker hub.
+
+![release_github](img/3.png "illustration")
+![release_docker.hub](img/2.png "illustration")
+
+###  Lint workflow
+
+it  run several jobs: 
+- a static analysis with semgrep
+- a Dockerfile analysis with hadolint
+- a super-linter execution, only if the event comes from a pull_request
+
+![lint](img/4.png "illustration")
+
+###  Test workflow
+
+This workflow is triggered for each push event and aims to execute the unit tests of
+the project.
+
+![test](img/5.png "illustration")
+
+
+
